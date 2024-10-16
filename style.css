@@ -1,0 +1,184 @@
+/* Profile picture styles */
+.profile-picture {
+  display: block;
+  margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #0056b3;
+}
+
+p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+header.dark-mode h1 {
+  color: #f4f4f4;
+}
+
+a.dark-mode {
+  color: #f4f4f4;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #003a7f;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #0056b3;
+  padding: 10px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-container .logo {
+  font-size: 1.5em;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap; /* Allow navigation items to wrap */
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0056b3;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
